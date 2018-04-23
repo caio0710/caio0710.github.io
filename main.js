@@ -1,9 +1,9 @@
 const topicMapping = [
-    { topic: 1, name: "Contexto", mainColor: "#C6EFB4"},
-    { topic: 2, name: "Desafios", mainColor: "#E4F9BC"},
-    { topic: 3, name: "Funções", mainColor: "#E2E2B6"},
-    { topic: 4, name: "Outros", mainColor: "#F9F3BC"},
-    { topic: 5, name: "Conclusão", mainColor: "#EFE3B4"},
+    { topic: 1, name: "Contexto", mainColor: "#7389B2"},
+    { topic: 2, name: "Desafios", mainColor: "#D7E5FF"},
+    { topic: 3, name: "Funções", mainColor: "#BED4FF"},
+    { topic: 4, name: "Outros", mainColor: "#B29961"},
+    { topic: 5, name: "Conclusão", mainColor: "#FFB514"},
 ];
 
 function generateTopics() {
