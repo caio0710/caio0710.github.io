@@ -1,0 +1,88 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.presentation {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url("./images/fundo1.jpg");
+	position: relative;
+}
+
+.mask {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+
+.presentationTitle {
+	color: white;
+	font-size: 60px;
+	font-family: Georgia;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+
+	text-shadow: #CCC 1px 0 10px;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.contentTitle {
+	position: absolute;
+	top: 2rem;
+	left: 2rem;
+	background: #e9e9e9;
+	padding: 1rem 2rem;
+	border: 1px solid #1c1c1c;
+	border-radius: 3px;
+
+	color: #444444;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 25px;
+	font-family: arial;
+}
+
+.contentContent {
+	position: absolute;
+	top: 10rem;
+	left: 2rem;
+	background: #e9e9e9;
+	padding: 1rem 2rem;
+	border: 1px solid #1c1c1c;
+	border-radius: 3px;
+}
+
+.contentContent.bottom {
+	top: auto;
+	bottom: 2rem;
+
+	max-width: 500px;
+}
+
+.contentContent > span {
+	font-weight: bold;
+}
+
+.contentContent > ul {
+	list-style: disc;
+	padding-left: 18px;
+}
+
+.contentContent > ul > li {
+	list-style: disc;
+}
