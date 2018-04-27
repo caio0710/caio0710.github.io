@@ -86,3 +86,14 @@ html, body {
 .contentContent > ul > li {
 	list-style: disc;
 }
+
+.imagesContainer {
+	position: absolute;
+	right: 5rem;
+	top: 5rem;
+}
+
+.imagesContainer img {
+	width: 100px;
+	height: 100px;
+}
