@@ -13,11 +13,11 @@
 		<div style="width: 100%; height: 100%; display: flex;">
 			<div class="side-nav">
 				<ul>
-					<li><i class="material-icons">account_balance</i>Arquitetura</li>
-					<li><i class="material-icons">pan_tool</i>Escultura</li>
-					<li><i class="material-icons">color_lens</i>Pinturas</li>
-					<li><i class="material-icons">view_compact</i>Mosaicos</li>
-					<li><i class="material-icons">format_bold</i>Iluminuras</li>
+					<li onClick="selectPage('arquitetura')"><i class="material-icons">account_balance</i>Arquitetura</li>
+					<li onClick="selectPage('escultura')"><i class="material-icons">pan_tool</i>Escultura</li>
+					<li onClick="selectPage('pinturas')"><i class="material-icons">color_lens</i>Pinturas</li>
+					<li onClick="selectPage('mosaicos')"><i class="material-icons">view_compact</i>Mosaicos</li>
+					<li onClick="selectPage('iluminuras')"><i class="material-icons">format_bold</i>Iluminuras</li>
 				</ul>
 			</div>
 			<div class="main-content">
@@ -61,32 +61,252 @@
 						</div>
 					</div>
 				</div>
-				<div class="topic-content hidden" data-topic="arquitetura">
-					<div class="topic-title">
-						Arquitetura
+				<div class="topic-content hidden" data-topic="arquitetura" style="background: #673AB7">
+					<div style="background-image: url('./images/igreja.jpg'); width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: 100%;">
+						<div style="width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: relative;">
+							<div style="position: absolute; top: 20px; left: 20px; background: #FFF; padding: 20px 40px; border-radius: 3px;">
+								<span style="color: #444; font-size: 36px; font-weight: bold;">
+									ARQUITETURA
+								</span>
+							</div>
+							<div style="position: absolute; top: 200px; left: 20px; background: #673AB7; padding: 20px 80px; border-radius: 3px;">
+								<ul style="list-style: none; padding: 0px;">
+									<li style="margin-bottom: 15px; color: #FFF; font-weight: bold">Características:</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Forte influência da religião católica
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Construções de diversas igrejas
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Planta em formato de cruz
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Tetos com abóbadas de pedra
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Fortalezas de deus
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Batistério e o Campanário
+									</li>
+								</ul>
+							</div>
+							<img onclick="onClickImg(this);" style="width: 500px; height: 200px; position: absolute; left: 600px; top: 100px;" basetop="100px" baseleft="600px" src="http://3.bp.blogspot.com/-Hw67Ulhjrys/T8ZHi6cbYXI/AAAAAAAAA7o/fnA8e0nw-20/s400/scan0085.jpg">
+							<img onclick="onClickImg(this);" style="width: 500px; height: 200px; position: absolute; left: 600px; top: 310px;" basetop="310px" baseleft="600px" src="https://concretoemcurva.files.wordpress.com/2016/03/plantas.jpg?w=620">
+							<img onclick="onClickImg(this);" style="width: 500px; height: 200px; position: absolute; left: 600px; top: 520px;" basetop="520px" baseleft="600px" src="https://image.slidesharecdn.com/arquiteturamedieval-100908230443-phpapp02/95/arquitetura-medieval-3-728.jpg?cb=1283987208">
+						</div>
 					</div>
 				</div>
-				<div class="topic-content hidden" data-topic="escultura">
-					<div class="topic-title">
-						Escultura
+				<div class="topic-content hidden" data-topic="escultura" style="background: #009688">
+					<div style="background-image: url('./images/igreja.jpg'); width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: 100%;">
+						<div style="width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: relative;">
+							<div style="position: absolute; top: 20px; left: 20px; background: #FFF; padding: 20px 40px; border-radius: 3px;">
+								<span style="color: #444; font-size: 36px; font-weight: bold;">
+									ESCULTURA
+								</span>
+							</div>
+							<div style="position: absolute; top: 200px; left: 20px; background: #009688; padding: 20px 80px; border-radius: 3px;">
+								<ul style="list-style: none; padding: 0px;">
+									<li style="margin-bottom: 15px; color: #FFF; font-weight: bold">Características:</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Aspecto realista
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Feita juntamente com a arquitetura
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Tímpanos
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Simbolismo e essência religiosa
+									</li>
+								</ul>
+							</div>
+							<img onclick="onClickImg(this);" style="width: 500px; height: 200px; position: absolute; left: 600px; top: 100px;" basetop="100px" baseleft="600px" src="https://i.pinimg.com/originals/d8/0d/a0/d80da04db8bb4bb5d7c46e9eb984f800.jpg">
+							<img onclick="onClickImg(this);" style="width: 500px; height: 200px; position: absolute; left: 600px; top: 310px;" basetop="310px" baseleft="600px" src="http://arte.vmribeiro.net/wp-content/uploads/2012/12/1390667166_d1641ab0f6.jpg">
+							<img onclick="onClickImg(this);" style="width: 500px; height: 200px; position: absolute; left: 600px; top: 520px;" basetop="520px" baseleft="600px" src="http://3.bp.blogspot.com/_BZfS0bjxC9Y/SstjZ8Vad1I/AAAAAAAAAEg/3QzSnJAW1Wo/s400/ChapitoStGeorges_capitel_romanico%5B1%5D.jpg">
+						</div>
 					</div>
 				</div>
-				<div class="topic-content hidden" data-topic="pinturas">
-					<div class="topic-title">
-						Pinturas
+				<div class="topic-content hidden" data-topic="pinturas" style="background: #8BC34A">
+					<div style="background-image: url('./images/igreja.jpg'); width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: 100%;">
+						<div style="width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: relative;">
+							<div style="position: absolute; top: 20px; left: 20px; background: #FFF; padding: 20px 40px; border-radius: 3px;">
+								<span style="color: #444; font-size: 36px; font-weight: bold;">
+									PINTURAS
+								</span>
+							</div>
+							<div style="position: absolute; top: 200px; left: 20px; background: #8BC34A; padding: 20px 80px; border-radius: 3px;">
+								<ul style="list-style: none; padding: 0px;">
+									<li style="margin-bottom: 15px; color: #444; font-weight: bold">Características:</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										Naturalismo, constrastes, vivacidade, delicadeza e harmonia
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										Interpretação mística da realidade
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										Influência dos Etruscos, egípcios e gregos
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										Utilizada em diversos lugares
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										Temas mais abordados foram cenas do antigo e novo testamento
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										Os traços faciais eram acentuados por contornos de traços grossos e escuroS
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										Dividida em: Pintura triunfal, Pintura mitológica, Pintura de paisagem, Naturezas-mortas e cenas da vida quotidiana, Retratos
+									</li>
+								</ul>
+							</div>
+							<img onclick="onClickImg(this);" style="width: 320px; height: 200px; position: absolute; left: 20px; top: 500px;" basewidth="320px" basetop="500px" baseleft="20px" src="https://1.bp.blogspot.com/-ccRryxcGzWI/WKI5MoFsCuI/AAAAAAAABVE/oOapzzsT2bUsC5tXJ2jDmW9i4sQgocuYwCLcB/s1600/JFPintura%2BRoma%25CC%2581nica.jpeg">
+							<img onclick="onClickImg(this);" style="width: 320px; height: 200px; position: absolute; left: 360px; top: 500px;" basewidth="320px" basetop="500px" baseleft="360px" src="http://jdcdn.wabisabiinvestme.netdna-cdn.com/wp-content/uploads/2016/08/6085387110_4eb4503285_b.jpg">
+							<img onclick="onClickImg(this);" style="width: 320px; height: 200px; position: absolute; left: 700px; top: 500px;" basewidth="320px" basetop="500px" baseleft="700px" src="http://3.bp.blogspot.com/_WBFtiBdEqk8/S1y_eFlwvJI/AAAAAAAAClo/DTi97khBftA/s400/pintura+romanica">
+						</div>
 					</div>
 				</div>
-				<div class="topic-content hidden" data-topic="mosaicos">
-					<div class="topic-title">
-						Mosaicos
+				<div class="topic-content hidden" data-topic="mosaicos" style="background: #FFC107">
+					<div style="background-image: url('./images/igreja.jpg'); width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: 100%;">
+						<div style="width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: relative;">
+							<div style="position: absolute; top: 20px; left: 20px; background: #FFF; padding: 20px 40px; border-radius: 3px;">
+								<span style="color: #444; font-size: 36px; font-weight: bold;">
+									MOSAICOS
+								</span>
+							</div>
+							<div style="position: absolute; top: 200px; left: 20px; background: #FFC107; padding: 20px 80px; border-radius: 3px;">
+								<ul style="list-style: none; padding: 0px;">
+									<li style="margin-bottom: 15px; color: #444; font-weight: bold">Características:</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										Tesselas de materiais coloridos como mármores, pedras e vidro
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										Inicialmente era utlizados apenas em paredes e tetos
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										Passaram a ser usados como pavimentos e em outros lugares
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										A mais típica decoração em mosaico é formada por uma espécie de "tapete" que cobrem parcial ou totalmente o chão de algumas divisões
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										Os temas eram parecidos com os das pinturas
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #444;">
+										<i class="material-icons" style="font-size: 18px; color: #444;">keyboard_arrow_right</i>
+										Foi continuado nas artes paleocristã e bizantina
+									</li>
+								</ul>
+							</div>
+							<img onclick="onClickImg(this);" style="width: 320px; height: 200px; position: absolute; left: 20px; top: 500px;" basewidth="320px" basetop="500px" baseleft="20px" src="http://2.bp.blogspot.com/-f_gEGqtrTO0/VfJB43ms12I/AAAAAAAACBQ/ejPT4kuZGns/s1600/mosaicobizantino-copy-copy.jpg">
+							<img onclick="onClickImg(this);" style="width: 320px; height: 200px; position: absolute; left: 360px; top: 500px;" basewidth="320px" basetop="500px" baseleft="360px" src="http://1.bp.blogspot.com/-45QHH47XEeU/ToyEqFu-q_I/AAAAAAAAADU/CFG6wHW1ea0/s1600/mosaico-veneza-italy-da-bas-iacutelica-de-marca-de-saint-thumb12895359.jpg">
+							<img onclick="onClickImg(this);" style="width: 320px; height: 200px; position: absolute; left: 700px; top: 500px;" basewidth="320px" basetop="500px" baseleft="700px" src="https://thumbs.dreamstime.com/b/agliate-igreja-de-san-pietro-mosaico-54305406.jpg">
+						</div>
 					</div>
 				</div>
-				<div class="topic-content hidden" data-topic="iluminuras">
-					<div class="topic-title">
-						Iluminuras
+				<div class="topic-content hidden" data-topic="iluminuras" style="background: #0288D1">
+					<div style="background-image: url('./images/igreja.jpg'); width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: 100%;">
+						<div style="width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: relative;">
+							<div style="position: absolute; top: 20px; left: 20px; background: #FFF; padding: 20px 40px; border-radius: 3px;">
+								<span style="color: #444; font-size: 36px; font-weight: bold;">
+									ILUMINURAS
+								</span>
+							</div>
+							<div style="position: absolute; top: 200px; left: 20px; background: #0288D1; padding: 20px 80px; border-radius: 3px;">
+								<ul style="list-style: none; padding: 0px;">
+									<li style="margin-bottom: 15px; color: #FFF; font-weight: bold">Características:</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Tipo de pintura aplicada em pergaminhos
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Monges e freiras copiavam os manuscritos para salvar e manter viva a arte da ilustração
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Eram utilizados pergaminhos de pele de boi ou de carneiro
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Detalhadamente decoradas na sua parte exterior
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										O nome de iluminura surgiu pelo fato de que os manuscritos continham a palavra de Deus juntamente com desenhos de grande beleza
+									</li>
+								</ul>
+							</div>
+							<img onclick="onClickImg(this);" style="width: 200px; height: 200px; position: absolute; left: 20px; top: 500px;" basewidth="200px" basetop="500px" baseleft="20px" src="https://3.bp.blogspot.com/-XcqxrXCC2TE/WPfjS3OtHOI/AAAAAAAAEjc/cFG4OlMLV_8gp7cC4IDe6MmzuRUMH1xBQCLcB/s1600/ailumi15.jpg">
+							<img onclick="onClickImg(this);" style="width: 200px; height: 200px; position: absolute; left: 240px; top: 500px;" basewidth="200px" basetop="500px" baseleft="240px" src="https://i.pinimg.com/736x/63/b7/41/63b741a9685c7271d0bb358a65e86012--search.jpg">
+							<img onclick="onClickImg(this);" style="width: 200px; height: 200px; position: absolute; left: 460px; top: 500px;" basewidth="200px" basetop="500px" baseleft="460px" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Silvestro_de%27_Gherarducci_-_Gradual_2_for_San_Michele_a_Murano_%28Folio_74%29_-_WGA08688.jpg">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div id="mask" style="width: 100%; height: 100%; background: rgba(0,0,0,0.8); position: absolute; top: 0px; left: 0px; display: block; z-index: 1; display: none;">
+		<script type="text/javascript">
+			function selectPage(page) {
+				var topics = document.getElementsByClassName("topic-content");
+
+				for (var i = 0; i < topics.length; i++) {
+					if (topics[i].getAttribute("data-topic") == page) {
+						topics[i].classList.remove("hidden");
+					} else {
+						topics[i].classList.add("hidden");
+					}
+				}
+			}
+
+			function onClickImg(img) {
+				if (img.getAttribute("expanded") == 1) {
+					img.style.width = img.getAttribute("basewidth") ? img.getAttribute("basewidth") : "500px";
+					img.style.height = "200px";
+					img.style.left = img.getAttribute("baseleft");
+					img.style.top = img.getAttribute("basetop");
+					img.style.zIndex = 1;
+					img.setAttribute("expanded", 0);
+
+					// document.getElementById("mask").style.display = "none";
+				} else {
+					img.style.width = "90%";
+					img.style.height = "90%";
+					img.style.top = "5%";
+					img.style.left = "auto";
+					img.style.right = "auto";
+					img.style.zIndex = 999;
+
+					img.setAttribute("expanded", 1);
+					// document.getElementById("mask").style.display = "block";
+				}
+			}
+
+		</script>
 	</body>
 </html>
