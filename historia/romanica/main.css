@@ -1,99 +1,81 @@
+* {
+	box-sizing: border-box;
+
+	font-family: Arial, Helvetica, sans-serif;
+	color: #444444;
+}
+
 html, body {
 	width: 100%;
 	height: 100%;
+	margin: 0px;
 }
 
-.presentation {
-	width: 100%;
-	height: 100%;
-	display: block;
-	background: url("./images/fundo1.jpg");
-	position: relative;
+.side-nav {
+	flex: 0 0 300px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	z-index: 1;
 }
 
-.mask {
+.side-nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
 	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.4);
+	border-top: 2px solid #528B8B;
 }
 
-.presentationTitle {
-	color: white;
-	font-size: 60px;
-	font-family: Georgia;
-	width: 100%;
-	height: 100%;
+.side-nav ul li {
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px;
+	text-transform: uppercase;
+	color: #444444;
+	border-bottom: 2px solid #528B8B;
+	cursor: pointer;
+
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	text-transform: uppercase;
-
-	text-shadow: #CCC 1px 0 10px;
 }
 
-.content {
+.side-nav ul li i {
+	margin-right: 10px;
+}
+
+.side-nav ul li:hover {
+	color: #474E64;
+	border-bottom: 2px solid #474E64;
+}
+
+.main-content {
+	flex: 1 1 auto;
+	position: relative;
+	border-left: 2px solid #474E64;
+}
+
+.topic-content {
 	width: 100%;
 	height: 100%;
-	display: block;
-	position: relative;
-
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 
-.contentTitle {
-	position: absolute;
-	top: 2rem;
-	left: 2rem;
-	background: #e9e9e9;
-	padding: 1rem 2rem;
-	border: 1px solid #1c1c1c;
-	border-radius: 3px;
+.hidden {
+	visibility: hidden;
+}
 
-	color: #444444;
-	font-weight: bold;
-	line-height: normal;
+.topic-title {
+	position: absolute;
+	top: 20px;
+	left: 20px;
 	font-size: 25px;
-	font-family: arial;
-}
-
-.contentContent {
-	position: absolute;
-	top: 10rem;
-	left: 2rem;
-	background: #e9e9e9;
-	padding: 1rem 2rem;
-	border: 1px solid #1c1c1c;
-	border-radius: 3px;
-}
-
-.contentContent.bottom {
-	top: auto;
-	bottom: 2rem;
-
-	max-width: 500px;
-}
-
-.contentContent > span {
 	font-weight: bold;
-}
-
-.contentContent > ul {
-	list-style: disc;
-	padding-left: 18px;
-}
-
-.contentContent > ul > li {
-	list-style: disc;
-}
-
-.imagesContainer {
-	position: absolute;
-	right: 5rem;
-	top: 5rem;
-}
-
-.imagesContainer img {
-	width: 100px;
-	height: 100px;
+	background: #FFF;
+	border: 1px solid #c1c1c1;
+	border-radius: 3px;
+	padding: 15px 50px;
+	line-height: normal;
 }

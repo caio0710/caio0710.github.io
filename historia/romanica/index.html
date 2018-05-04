@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Arte românica</title>
-
-		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<title>Projeto 1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="../../assets/materialize/css/materialize.min.css" media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="./main.css" media="screen,projection"/>
-		<script type="text/javascript" src="../../assets/materialize/js/materialize.min.js"></script>
+		<script src="main.js"></script>
 	</head>
 	<body>
-		<div class="presentation">
-			<div class="presentationTitle mask">
-				Arte românica
+		<div style="width: 100%; height: 100%; display: flex;">
+			<div class="side-nav">
+				<ul>
+					<li><i class="material-icons">account_balance</i>Arquitetura</li>
+					<li><i class="material-icons">pan_tool</i>Escultura</li>
+					<li><i class="material-icons">color_lens</i>Pinturas</li>
+					<li><i class="material-icons">view_compact</i>Mosaicos</li>
+					<li><i class="material-icons">format_bold</i>Iluminuras</li>
+				</ul>
 			</div>
-		</div>
-		<div class="content" style="background-image: url('./images/arquitetura.jpg')">
-			<div class="mask">
-				<div class="contentTitle">Arquitetura</div>
-				<div class="contentContent z-depth-4">
-					<span>Características</span>
-					<ul>
-						<li>Abóbadas em substituição ao telhado</li>
-						<li>Pilares maciços e paredes espessas</li>
-						<li>Poucas janelas</li>
-						<li>Plantas das construções em formato de cruz</li>
-					</ul>
+			<div class="main-content">
+				<div class="topic-content" data-topic="geral">
+					<div style="background-image: url('./images/fundo1.jpg'); width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: 100%;">
+						<div style="width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: relative;">
+							<div style="position: absolute; top: 20px; left: 20px; background: #0097A7; padding: 20px 40px; border-radius: 3px;">
+								<span style="color: #fff; font-size: 36px; font-weight: bold;">
+									ARTE ROMÂNICA
+								</span>
+							</div>
+							<div style="position: absolute; bottom: 20px; right: 20px; background: #009688; padding: 20px 80px; border-radius: 3px;">
+								<ul style="list-style: none; padding: 0px;">
+									<li style="margin-bottom: 15px; color: #FFF; font-weight: bold">Alunos:</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Amábile Bianca
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Andressa Lima
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Andriely Braz
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Caio Villwock
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Gabriel Nehls
+									</li>
+									<li style="display: flex; font-size: 15px; align-items: center; margin-bottom: 5px; color: #FFF;">
+										<i class="material-icons" style="font-size: 18px; color: #FFF;">keyboard_arrow_right</i>
+										Isabela Bozzola
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="contentContent bottom z-depth-4">
-					<span>Resumo</span>
-					<p>
-						Graças ao estabelecimento da religião católica romana, diversas igrejas foram construídas na Europa feudal. Essas igrejas seguiam a planta basilical com cruz latina como principal tipo de planta na concepção dessas igrejas. Antes desse período as igrejas eram construídas com telhados de madeira, isso fazia com que, caso ela sofresse algum ataque, ela queimaria muito rapidamente.
-					</p>
+				<div class="topic-content hidden" data-topic="arquitetura">
+					<div class="topic-title">
+						Arquitetura
+					</div>
 				</div>
-				<div class="imagesContainer">
-					<img src="./images/saomt.jpg" />
-					<img src="./images/igreja2.jpg" />
-					<img src="./images/abobadas.jpg" />
+				<div class="topic-content hidden" data-topic="escultura">
+					<div class="topic-title">
+						Escultura
+					</div>
+				</div>
+				<div class="topic-content hidden" data-topic="pinturas">
+					<div class="topic-title">
+						Pinturas
+					</div>
+				</div>
+				<div class="topic-content hidden" data-topic="mosaicos">
+					<div class="topic-title">
+						Mosaicos
+					</div>
+				</div>
+				<div class="topic-content hidden" data-topic="iluminuras">
+					<div class="topic-title">
+						Iluminuras
+					</div>
 				</div>
 			</div>
 		</div>
