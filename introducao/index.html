@@ -1,48 +1,161 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Projeto 1</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script src="main.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="side-nav">
-                <ul id="navList">
-                    
-                </ul>
-            </div>
-            <div class="main-content">
-                <div class="topic-content hidden" data-topic="1">
-                    <div class="topic-title">
-                        Contexto
-                    </div>
-                </div>
-                <div class="topic-content hidden" data-topic="2">
-                    <div class="topic-title">
-                        Desafios
-                    </div>
-                </div>
-                <div class="topic-content hidden" data-topic="3">
-                    <div class="topic-title">
-                        Funções
-                    </div>
-                </div>
-                <div class="topic-content hidden" data-topic="4">
-                    <div class="topic-title">
-                        Outros
-                    </div>
-                </div>
-                <div class="topic-content hidden" data-topic="5">
-                    <div class="topic-title">
-                        Conclusão
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+	<head>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="../assets/materialize/css/materialize.min.css"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="./main.css"  media="screen,projection"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Design</title>
+	</head>
+	<body>
+		<div class="row" style="height: 100%; margin: 0px;">
+			<div class="col s12 m4 l3 grey lighten-5" style="height: 100%; padding: 0px; position: relative;">
+				<div style="height: 100%; width: 100%; display: flex; align-items: center;">
+					<div id="sideNav" class="side-nav">
+						<span id="homeItem" data-type="home" onClick="setActiveContent('home')">Home</span>
+						<span id="designItem" data-type="design" onClick="setActiveContent('design')">O que é design</span>
+						<span id="desafiosItem" data-type="desafios" onClick="setActiveContent('desafios')">Desafios</span>
+						<span id="funcoesItem" data-type="funcoes" onClick="setActiveContent('funcoes')">Funções</span>
+						<span id="considItem" data-type="consideracoes" onClick="setActiveContent('consideracoes')">Considerações</span>
+					</div>
+				</div>
+				<img src="./images/logo-univille.jpg" class="logoUni">
+			</div>
+
+			<div class="col s12 m8 l9" style="height: 100%; padding: 0px;">
+				<div data-type="home" class="content" style="background-image: url('./images/design-cover.jpg')">
+					<div class="overlay-mask" style="background: #263238;"></div>
+					<div class="row">
+						<div class="col s12">
+							<span class="contentTitle z-depth-4" style="background: #f5f5f5; color: #444444;">
+								Design
+							</span>
+						</div>
+					</div>
+					<div class="z-depth-4" style="position: absolute; bottom: 20px; right: 20px; background: #f5f5f5; padding: 20px 60px; border-radius: 3px; z-index: 2;">
+						<ul class="homeList">
+							<li>Alunos:</li>
+							<li>Amábile Bianca</li>
+							<li>Caio Villwock</li>
+							<li>Gabriel Nehls</li>
+							<li>Isabela Bozzola</li>
+						</ul>
+					</div>
+				</div>
+
+				<div data-type="design" class="content" style="background-image: url('./images/design-what.jpg')">
+					<div class="overlay-mask" style="background: #283593;"></div>
+					<div class="row">
+						<div class="col s12">
+							<span class="contentTitle z-depth-4" style="background: #e8eaf6; color: #444444;">
+								O que é design
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<p>
+								Designers Industriais colocam o humano no centro do processo. Eles adquirem uma profunda compreensão das necessidades dos usuários por meio da empatia e aplicam um processo de solução de problemas pragmático e centrado no usuário para projetar produtos, sistemas, serviços e experiências. Eles são partes interessadas estratégicas no processo de inovação e estão posicionados de forma única para colmatar várias disciplinas profissionais e interesses comerciais. Eles valorizam o impacto econômico, social e ambiental de seu trabalho e sua contribuição para co-criar uma melhor qualidade de vida.
+
+
+								Perguntas mais frequentes sobre design 
+								1. O que geralmente os profissionais mais gostam da profissão: A parte da criação/pesquisa, e a liberdade de poder atuar em diversos campos/segmentos. 
+
+								2. Os recursos mais utilizados: Photoshop, Ilustrator, Corel Draw 
+
+								3. Qual o impacto nas pessoas: é diretamente na qualidade de vida dos clientes através de um bom trabalho e o quanto você pode mostrar coisas novas para ele.
+
+								4. Como possível influenciar as pessoas: Basicamente em tudo, até das suas preferências ao consumo consciente de várias coisas. 
+
+								5. Até onde vai a teoria e a imaginação: Bom, nesse caso a teoria fica meio que como limite da criação, pois quando você faz um determinado projeto, você tem que estar ciente que aquilo vai se tornar realidade, e sendo assim, temos que nos limitar para ele poder ser executado. 
+
+								6. Sobre o dinheiro: É muito clichê, mas a partir do momento em que você está fazendo algo que curte, o dinheiro se torna irrelevante, porém se você respeitar a ideia do cliente e gerar um bom conteúdo a chances de você se dar bem são muito grandes. 
+
+								7. Como ter um bom portfólio: ele gerado através de poucas palavras e imagens que transparecem quem você é e qual seu objetivo, ter imagens de trabalhos anteriores também ajuda muito.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div data-type="desafios" class="content" style="background-image: url('./images/design-what.jpg')">
+					<div class="overlay-mask" style="background: #388e3c;"></div>
+					<div class="row">
+						<div class="col s12">
+							<span class="contentTitle z-depth-4" style="background: #e8f5e9; color: #444444;">
+								Desafios
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div data-type="funcoes" class="content" style="background-image: url('./images/design-what.jpg')">
+					<div class="overlay-mask" style="background: #c62828;"></div>
+					<div class="row">
+						<div class="col s12">
+							<span class="contentTitle z-depth-4" style="background: #ffebee; color: #444444;">
+								Funções
+							</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<p>
+								Nas funções práticas, simbólicas e estéticas, podemos utilizar um exemplo simples e objetivo para a compreensão dos termos. Uma engranagem, apesar de poder ter grande importância em um mecanismo, não é projetada levando em conta as necessidades de um usuário. Já o exterior de tal mecanismo, como por exemplo de um relógio, é projetado e estudado de acordo com as necessidades do usuário. 
+								Este exemplo mostra como a maioria das vezes o as funções funcionam. A engranagem, que tem seu maior foco na função prática, e o relógio que tem seu maior foco nas funções simbólicas e estéticas.
+								O designer utiliza estas funções em consideração para projetar certo produto, sendo na maioria das vezes responsável principalmente pela parte simbólica e estética. O processo leva em consideração o estudo de seus usuários para melhor atender as suas necessidades no presente e até mesmo no futuro. A partir de estudo, pesquisa e experiência profissional o produto é desenvolvido e testado em prática para tentativa e erro, para assim, diminuir a riscos de fracasso no lançamento de um novo produto. 
+								Segue a baixo as definições das funções: 
+
+								Função prática: Dominam-se todas as relações físicas do produto com o usuário. Todos os aspectos fisiológicos do produto. 
+
+								Função simbólica: É o que gera a conexão, empatia ou percepção do produto. Faz com que o usuário estabeleça ligações com suas experiências e sensções anteriores. 
+
+								Função estética: Trata-se da relação sensorial entre o objeto e o homem. Significa projetar e adaptar o seu objeto as condições perceptivas do homem.
+
+								Com estas definições em mente, podemos discutir uma vertente que envolve os produtos desenvolvidos com estas metodologias: o valor de uso e o valor simbólico de um determinado, produto, marca, etc. 
+								Até que valor um produto pode chegar? Quem determina o quanto esse produto vale? Por que o mesmo produto em uma marca diferente custa o dobro do preço? 
+								Todas essas questões envolvem os valores que a sociedade a aplica a certas marcas e produtos. O fato de que é a sociedade que vai determinar os valores faz com que cada vez mais as pesquisas de mercado tomem maior importância nos planejamentos. Tudo conta para atingir um publico alvo. Desde os seus hábitos aos suas características.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div data-type="consideracoes" class="content" style="background-image: url('./images/design-what.jpg')">
+					<div class="overlay-mask" style="background: #ffab00;"></div>
+					<div class="row">
+						<div class="col s12">
+							<span class="contentTitle z-depth-4" style="background: #fff8e1; color: #444444;">
+								Considerações
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../assets/materialize/js/materialize.min.js"></script>
+		<script type="text/javascript">
+			
+			function setActiveContent(type) {
+				document.querySelectorAll(".side-nav span").forEach(function(current) {
+					if (current.getAttribute("data-type") == type) {
+						current.classList.add("active");
+					} else {
+						current.classList.remove("active");
+					}
+				});
+
+				document.querySelectorAll(".content").forEach(function(current) {
+					if (current.getAttribute("data-type") == type) {
+						current.style.display = "block";
+					} else {
+						current.style.display = "none";
+					}
+				});
+			}
+
+			(function() {
+				setActiveContent("home");
+			})();
+
+		</script>
+	</body>
 </html>
